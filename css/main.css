@@ -1,5 +1,14 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
+/*
+ CSS var overrides. Should ideally be declared in the _variables.scss file, adding it here just for demonstration so long
+*/
+:root {
+  --tds-primary: #382ab1;
+  --tds-secondary: #b3d948;
+  --tds-tertiary: #20aee0;
+}
+
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -21,8 +30,68 @@ html {
   height:100vh;
 }
 
+.teaser-wrapper {
+  background: rgb(0,157,234);
+  background: linear-gradient(21deg, rgba(0,157,234,1) 0%, rgba(46,46,144,1) 33%, rgba(46,46,144,1) 65%, rgba(63,136,177,1) 100%);
+}
+
 .logo-img {
-  max-height:50px;
+  max-height:38px;
+}
+
+.tds-login-icon {
+  max-width: 100px;
+  height:auto;
+}
+
+.text-smaller {
+  font-size:0.88rem;
+}
+
+/* Link overrides */
+a.no-underline {
+  text-decoration: none;
+}
+
+/* Temp color overrides */
+.text-tds-primary {
+  color: var(--tds-primary);
+}
+
+.text-tds-secondary {
+  color: var(--tds-secondary);
+}
+
+.text-tds-tertiary {
+  color: var(--tds-secondary);
+}
+
+.bg-tds-primary {
+  background-color: var(--tds-primary);
+}
+
+.bg-tds-secondary {
+  background-color: var(--tds-secondary);
+}
+
+.bg-tds-tertiary {
+  background-color: var(--tds-tertiary);
+}
+
+/* Checkbox overrides */
+.form-check-input:checked {
+  background-color: rgb(246, 79, 157) !important;
+  border-color: transparent !important;
+}
+
+.form-check-input:checked:focus {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(246, 79, 157, 0.25)
+}
+.form-check-input:focus {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
+}
+.form-check-input:active {
+  background-color: rgb(241, 166, 201);
 }
 
 /*
