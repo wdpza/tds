@@ -30,6 +30,12 @@ html {
   height:100vh;
 }
 
+.navbar {
+  -webkit-box-shadow: 0 8px 6px -6px rgb(153 153 153 / 30%);
+  -moz-box-shadow: 0 8px 6px -6px rgb(153 153 153 / 30%);
+  box-shadow: 0 8px 6px -6px rgb(153 153 153 / 30%);
+}
+
 .teaser-wrapper {
   background: rgb(0,157,234);
   background: linear-gradient(21deg, rgba(0,157,234,1) 0%, rgba(46,46,144,1) 33%, rgba(46,46,144,1) 65%, rgba(63,136,177,1) 100%);
