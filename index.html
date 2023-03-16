@@ -16,14 +16,15 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/main.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
 
   <body>
-    <div class="container-fluid" id="mainWrapper">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white position-fixed w-100">
+    <div class="container-fluid p-0" id="mainWrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white w-100">
         <a class="navbar-brand" href="#">
           <img src="img/tds-logo.png" class="logo-img" />
         </a>
@@ -39,15 +40,15 @@
               <h6 class="text-tds-primary text-center">Please login with your TDS Cloud credentials</h6>
             </div>
             <div class="login-form w-75">
-              <form>
+              <form id="loginForm">
                 <div class="form-group mb-3">
-                  <label for="exampleInputEmail1" class="p-1">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <label for="inputEmail" class="p-1">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                   <small id="emailHelp" class="form-text text-muted p-1">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group mb-3">
-                  <label for="exampleInputPassword1" class="p-1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <label for="inputPassword" class="p-1">Password</label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                 </div>
                 <button type="submit" class="btn btn-primary .bg-tds-tertiary w-100 my-3">Submit</button>
                 <div class="d-flex justify-content-end" id="rememberLogin">
@@ -65,10 +66,10 @@
         </div>
         <div class="col-md teaser-wrapper">
           <div style="height:100%;" class="d-flex flex-column justify-content-center align-items-start">
-            <div class="teaser-content p-5 w-75">
-              <h1 class="text-white fw-bolder">The latest in biometrics</h1>
-              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in interdum mauris, vitae elementum leo. Nam a metus arcu. Integer pretium ornare enim, non ultricies libero aliquet a. Nam ut nibh et risus imperdiet maximus eu eu neque.</p>
-              <a class="btn btn-primary .bg-tds-tertiary my-1">Learn More</a>
+            <div class="teaser-content p-5 w-80">
+              <h1 class="text-white fw-bolder">The Latest in Biometrics</h1>
+              <p class="text-white fs-5 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in interdum mauris, vitae elementum leo. Nam a metus arcu. Integer pretium ornare enim, non ultricies libero aliquet a. Nam ut nibh et risus imperdiet maximus eu eu neque.</p>
+              <a class="btn btn-primary bg-tds-tertiary my-1">Learn More</a>
             </div>
             <div class="d-flex align-items-center justify-content-center">
               <div class="teaser-image text-center bg-white rounded-4 w-75 py-5">
@@ -82,6 +83,7 @@
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="inc/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 

@@ -338,3 +338,18 @@ textarea {
   }
 }
 
+@media (max-width: 575.98px) {
+  .navbar, .navbar.position-fixed {
+    display:block;
+    position:relative !important;
+  }
+
+  .tds-icon {
+    margin-top:2rem;
+  }
+
+  .teaser-image {
+    margin-bottom:3rem;
+  }
+}
+
